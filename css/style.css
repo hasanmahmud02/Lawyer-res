@@ -1,0 +1,420 @@
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Open Sans', sans-serif;  */
+*{
+    margin: 0;
+    padding: 0;
+}
+h1, h2 ,h3 ,h4 ,h5, a{
+    font-family: 'Montserrat', sans-serif;font-family: 'Montserrat', sans-serif;
+}
+h2{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 15px 0;
+    margin: 0;
+    color: #204f87;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+.img-fluid {
+    max-width: 80%;
+    height: auto;
+}
+.navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    padding: 0px;
+    font-size: 13px;
+    color: #204f87;
+    font-weight: 600;
+}
+.header{
+    padding: 10px 0;
+}
+.slider{
+    background-image: url(../images/header-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    position: relative;
+}
+.slider h1 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+}
+.icon {
+    position: absolute;
+    color: #fff;
+    left: 50%;
+    top: 80%;
+    font-size: 20px;
+    transform: translate(-50%, 0px);
+    animation: updown 1s linear infinite;
+    animation-direction: alternate ;
+
+}
+@keyframes updown{
+    0%{
+        top: 80%;
+    }
+
+    100%{
+        top: 85%;
+    }
+}
+
+.feature{
+    padding: 80px 0;
+}
+.feature-content{
+    text-align: justify;
+}
+.feature-content span{   
+    display: inline-block;
+    width: 0px;
+    height: 4px;
+    background-color: #F2622C;
+    transition: .5s all ease-in-out;
+}
+.feature:hover .feature-content span{
+    width: 80px;
+}
+
+.feature-content h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    color: #204f87;
+}
+.feature p{
+    font-size: 16px;
+    color: #b0b0b1;
+}
+.feature-img{
+    
+    text-align: end;
+    
+}
+
+
+.what-we-do {
+    background-image: url(../images/item-bg.png);
+    background-size: 750px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #f7f8f8;
+    padding-bottom: 158px;
+    padding-top: 40px;
+}
+.heading-2 span{   
+    display: inline-block;
+    width: 0px;
+    height: 4px;
+    background-color: #F2622C;
+    transition: .5s all ease-in-out;
+}
+.what-we-do:hover .heading-2 span{
+    width: 80px;
+}
+.image img{
+    width: 100%;
+}
+.image{
+    position: relative;
+}
+.image::before{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 0%;
+    transition: 0.4s all ease-in-out;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,204f87+100&0+31,1+84 */
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(182,170,204,0) 37%, rgba(57,25,116,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(182,170,204,0) 37%,rgba(57,25,116,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(182,170,204,0) 37%,rgba(57,25,116,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#391974',GradientType=0 );
+
+}
+
+.image:hover::before{
+    height: 100%;
+}
+
+.title{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+    color: #fff;   
+    font-size: 40px;
+    font-weight: 700;
+}
+.title h2{
+    
+    color: #fff;  
+}
+
+.image:hover .title{
+    opacity: 1;
+    top:35%; 
+}
+.arrow {
+    position: absolute;
+    top: 80%;
+    color: #fff;
+    left: 30%;
+    transform: translateX(-40%);
+    font-size: 32px;
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+}
+
+.image:hover .arrow{
+    opacity: 1;
+    left: 50%;
+}
+
+
+
+.our-attorneys{
+    background-image: url(../images/person-bg.png);
+    padding: 100px 0 60px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.attorneys-content{
+    padding-top: 50px;
+}
+
+.our-attorneys:hover .feature-content span{
+    width: 80px;
+}
+.our-attorneys h2{
+    color: #fff;
+}
+.our-attorneys p{
+    font-size: 16px;
+    color: #b0b0b1;
+}
+
+.attorneys-image{
+    position: relative;
+    margin-bottom: 80px;
+}
+.attorneys-image::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 0%;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(182,170,204,0) 37%, rgba(57,25,116,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(182,170,204,0) 37%,rgba(57,25,116,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(182,170,204,0) 37%,rgba(57,25,116,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#391974',GradientType=0 );
+    transition: 0.3s all ease-in-out;
+}
+
+.attorneys-image:hover::before{
+    height: 100%;
+}
+
+
+.title2 {
+    text-align: left;
+    position: absolute;
+    left: 15%;
+    top: 65%;
+    transform: translate(0, -30%);
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+
+}
+.attorneys-image:hover .title2{
+    opacity: 1;
+    top: 70%;
+}
+
+.attorneys-content a{
+color: #F2622C !important;
+text-decoration: none;
+font-size: 18px;
+font-weight: 500;
+}
+.attorneys-content a:hover{
+    color: #ce5124 !important;
+}
+
+.the-languages{
+    padding: 80px 0;
+}
+
+.the-languages:hover  .heading-2 span{
+    width: 80px;
+}
+
+.languages-content {
+    padding-top: 20px;
+}
+.languages-content h2{
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0;
+    color: #204f87;
+}
+.languages-content p{
+    font-size: 16px;
+    color: #b0b0b1;
+    text-align: left;
+}
+.languages-content a{
+    color: #F2622C !important;
+text-decoration: none;
+font-size: 18px;
+font-weight: 600;
+}
+.languages-content a:hover{
+    color: #d45425 !important;
+}
+
+.contact-us{
+    padding: 80px 0;
+    background-color: #36226f;
+}
+
+.contact-us:hover  .heading-2 span{
+    width: 80px;
+}
+.contact-us h2{
+    color: #fff;
+}
+
+.form-control {
+    display: block;
+    border: none;
+    border-radius: 0%;
+    width: 100%;
+    /* padding: .375rem .75rem; */
+    font-size: 1rem;
+    font-weight: 400;
+    /* line-height: 1.5; */
+    color: #000000;
+    background-color: #fff0;
+    /* background-clip: padding-box; */
+    border-bottom: 1px solid #cecfd0;
+    /* -webkit-appearance: none; */
+    -moz-appearance: none;
+    /* appearance: none; */
+    /* border-radius: .25rem; */
+    transition:none;
+    font-size: 18px;
+    color: #fff !important;
+    font-weight: 600;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: #F2622C;
+    outline:none;
+     box-shadow:none;
+}
+.contact-btn button {
+    width: 180px;
+    height: 40px;
+    background-color: #F2622C;
+    color: #fff;
+    margin-top: 20px;
+    font-weight: 700;
+}
+.contact-btn button:hover{
+    background-color: #ce5225;
+    color: rgb(212, 212, 212);
+}
+.btn-check:focus+.btn, .btn:focus {
+    outline: none;
+    box-shadow:none;
+}
+
+
+.footer{
+    background-color: #16102b;
+    padding: 20px 0;
+}
+
+.footer-content p{
+    padding-top: 13px;
+    color: #6c65a0;
+}
+.footer-icon ul{
+    list-style: none;
+}
+.footer-icon ul li{
+  
+    float: left;
+    padding: 0 20px;
+
+} 
+
+.footer-icon ul li a {
+    color: #fff;
+}
+
+.navbar-toggler-icon{
+    display: inline-block;
+    width: 25px;
+    height: 3px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: #36236e;
+    position: relative;
+}
+
+.navbar-toggler-icon::before {
+    position: absolute;
+    content: '';
+    width: 65%;
+    background-color: #36236e;
+    height: 3px;
+    right: 0;
+    top: -193%;
+}
+.navbar-toggler-icon::after{
+    position: absolute;
+    content: '';
+    width: 65%;
+    background-color: #36236e;
+    height: 3px;
+    right: 0;
+    top: 216%;
+}
+.navbar-toggler {
+    padding: 0;
+    line-height: 0;
+   box-shadow: none;
+   outline: none;
+}
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow:none;
+}
+
+.our-attorneys h2 {
+    font-size: 23px;
+}
+.title h2 {
+    font-size: 23px;
+}
